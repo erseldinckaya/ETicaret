@@ -1,0 +1,12 @@
+/Users/ersel/Desktop/OnionArch/ETicaretBackend/ETicaretBackend.Domain/bin/Debug/net6.0/ETicaretBackend.Domain.deps.json
+/Users/ersel/Desktop/OnionArch/ETicaretBackend/ETicaretBackend.Domain/bin/Debug/net6.0/ETicaretBackend.Domain.dll
+/Users/ersel/Desktop/OnionArch/ETicaretBackend/ETicaretBackend.Domain/bin/Debug/net6.0/ETicaretBackend.Domain.pdb
+/Users/ersel/Desktop/OnionArch/ETicaretBackend/ETicaretBackend.Domain/obj/Debug/net6.0/ETicaretBackend.Domain.csproj.AssemblyReference.cache
+/Users/ersel/Desktop/OnionArch/ETicaretBackend/ETicaretBackend.Domain/obj/Debug/net6.0/ETicaretBackend.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ersel/Desktop/OnionArch/ETicaretBackend/ETicaretBackend.Domain/obj/Debug/net6.0/ETicaretBackend.Domain.AssemblyInfoInputs.cache
+/Users/ersel/Desktop/OnionArch/ETicaretBackend/ETicaretBackend.Domain/obj/Debug/net6.0/ETicaretBackend.Domain.AssemblyInfo.cs
+/Users/ersel/Desktop/OnionArch/ETicaretBackend/ETicaretBackend.Domain/obj/Debug/net6.0/ETicaretBackend.Domain.csproj.CoreCompileInputs.cache
+/Users/ersel/Desktop/OnionArch/ETicaretBackend/ETicaretBackend.Domain/obj/Debug/net6.0/ETicaretBackend.Domain.dll
+/Users/ersel/Desktop/OnionArch/ETicaretBackend/ETicaretBackend.Domain/obj/Debug/net6.0/refint/ETicaretBackend.Domain.dll
+/Users/ersel/Desktop/OnionArch/ETicaretBackend/ETicaretBackend.Domain/obj/Debug/net6.0/ETicaretBackend.Domain.pdb
+/Users/ersel/Desktop/OnionArch/ETicaretBackend/ETicaretBackend.Domain/obj/Debug/net6.0/ref/ETicaretBackend.Domain.dll
