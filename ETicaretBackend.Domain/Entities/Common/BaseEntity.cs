@@ -5,6 +5,6 @@ namespace ETicaretBackend.Domain.Entities.Common;
 public class BaseEntity
 {
     [Key]
-    public Guid Guid { get; set; }
+    public Guid Id { get; set; }
     public DateTime CreatedDate { get; set; }
 }

@@ -24,7 +24,7 @@ namespace ETicaretBackend.Persistence.Migrations
 
             modelBuilder.Entity("ETicaretBackend.Domain.Entities.Customer", b =>
                 {
-                    b.Property<Guid>("Guid")
+                    b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uuid");
 
@@ -35,14 +35,14 @@ namespace ETicaretBackend.Persistence.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.HasKey("Guid");
+                    b.HasKey("Id");
 
                     b.ToTable("Customers");
                 });
 
             modelBuilder.Entity("ETicaretBackend.Domain.Entities.Order", b =>
                 {
-                    b.Property<Guid>("Guid")
+                    b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uuid");
 
@@ -60,7 +60,7 @@ namespace ETicaretBackend.Persistence.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.HasKey("Guid");
+                    b.HasKey("Id");
 
                     b.HasIndex("CustomerId");
 
@@ -69,7 +69,7 @@ namespace ETicaretBackend.Persistence.Migrations
 
             modelBuilder.Entity("ETicaretBackend.Domain.Entities.Product", b =>
                 {
-                    b.Property<Guid>("Guid")
+                    b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uuid");
 
@@ -86,22 +86,22 @@ namespace ETicaretBackend.Persistence.Migrations
                     b.Property<int>("Stock")
                         .HasColumnType("integer");
 
-                    b.HasKey("Guid");
+                    b.HasKey("Id");
 
                     b.ToTable("Products");
                 });
 
             modelBuilder.Entity("OrderProduct", b =>
                 {
-                    b.Property<Guid>("OrdersGuid")
+                    b.Property<Guid>("OrdersId")
                         .HasColumnType("uuid");
 
-                    b.Property<Guid>("ProductsGuid")
+                    b.Property<Guid>("ProductsId")
                         .HasColumnType("uuid");
 
-                    b.HasKey("OrdersGuid", "ProductsGuid");
+                    b.HasKey("OrdersId", "ProductsId");
 
-                    b.HasIndex("ProductsGuid");
+                    b.HasIndex("ProductsId");
 
                     b.ToTable("OrderProduct");
                 });
@@ -121,13 +121,13 @@ namespace ETicaretBackend.Persistence.Migrations
                 {
                     b.HasOne("ETicaretBackend.Domain.Entities.Order", null)
                         .WithMany()
-                        .HasForeignKey("OrdersGuid")
+                        .HasForeignKey("OrdersId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("ETicaretBackend.Domain.Entities.Product", null)
                         .WithMany()
-                        .HasForeignKey("ProductsGuid")
+                        .HasForeignKey("ProductsId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });

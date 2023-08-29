@@ -388,7 +388,8 @@
       },
       "ETicaretBackend.Application/1.0.0": {
         "dependencies": {
-          "ETicaretBackend.Domain": "1.0.0"
+          "ETicaretBackend.Domain": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "7.0.10"
         },
         "runtime": {
           "ETicaretBackend.Application.dll": {}
