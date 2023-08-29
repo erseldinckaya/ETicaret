@@ -18,12 +18,19 @@ public class ProductController : ControllerBase
     }
 
     [HttpGet]
-    public async void Get()
+    public async Task Get()
     {
         await _productWriteRepository.AddRangeAsync(new()
         {
             new() { Id = Guid.NewGuid(), CreatedDate = DateTime.UtcNow, Name = "Product1", Price = 100, Stock = 10 }
         });
         await _productWriteRepository.SaveAsync();
+    }
+
+    [HttpGet("id")]
+    public async Task<IActionResult> Get(string id)
+    {
+        Product product = await _productReadRepository.GetByIdAsync(id);
+        return Ok(product);
     }
 }
